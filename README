@@ -1,0 +1,10 @@
+Since only a limited number of neurons are being used . python can be 
+used for this project ..
+
+Reason not to use c++ : 
+	I do not know how the linking the gnu tools work..
+
+
+To compile the program 
+
+g++-5 -std=c++11 dynaSerial.cpp main.cpp -o main -lserial -lpthread
