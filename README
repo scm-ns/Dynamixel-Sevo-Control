@@ -1,10 +1,16 @@
-Since only a limited number of neurons are being used . python can be 
-used for this project ..
-
-Reason not to use c++ : 
-	I do not know how the linking the gnu tools work..
+Program to control the dynamixel Servo on linux .
 
 
 To compile the program 
 
 g++-5 -std=c++11 dynaSerial.cpp main.cpp -o main -lserial -lpthread
+
+Note : 
+	- Use g++-5 to use lib Serial ( Does not work with 4.9 : Headers get screwed up)
+
+	- Install libSerial by following https://www.howtoinstall.co/en/ubuntu/utopic/libserial-dev
+	version of libSerial used : 0.6.0~rc2+svn122-4
+
+	- Run main as sudo. For access to the serial port . On run chmod on the serial port
+	- The ros program should already be running on the board . This can be send to it 
+		with the arduino 
